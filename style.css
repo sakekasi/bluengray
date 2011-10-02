@@ -1,0 +1,144 @@
+/*
+ Theme Name: Blue 'n Gray
+ Theme URI: http://www.sakekasi.com/
+ Description: The theme used on my personal wordpress blog.
+ Author: Saketh Kasibatla
+ Author URI: http://www.sakekasi.com/
+ Version: 1.0
+ Tags: blue, black, minimalist, elegant, cursive
+ .
+ This theme is released under the GNU GPL
+ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ .
+ */
+
+/* Reset default browser styles */
+@import url('styles/reset.css');
+
+/* Rebuild default browser styles */
+@import url('styles/rebuild.css');
+
+#access {
+    overflow: auto;
+}
+.skip-link {
+    position:absolute;
+        left:-9000px;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+}
+.menu ul ul {
+    display: none;
+}
+.menu li {
+    display: inline;
+}
+.menu a {
+    display: block;
+    float: left;
+}
+
+/*
+ * positioning
+ */
+#container {
+	position : absolute;
+	left : 310px;
+	width : 600px;
+}
+
+#header {
+	float : left;
+	position : absolute;
+	margin : 0 0 0 0;
+	width : 310 px;
+}
+
+#wrapper {
+	position : relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/*
+ * fonts
+ */
+
+@font-face{
+	font-family: "Wendy";
+	src:url("fonts/wendylpbold.ttf");
+}
+
+@font-face{
+	font-family: "PT Sans";
+	src:url("fonts/PT_Sans-Narrow-Web-Regular.ttf");
+}
+
+/*
+ * styling
+ */
+
+body {
+	background-color: #e6e6e6;
+}
+
+#blog-title{
+	position: relative;
+	color: #5f87d0;
+	font-family: "Wendy" ;
+	font-size: 105px;
+	text-decoration: none;
+	text-align: center;
+}
+
+#blog-description{
+	position: relative;
+	top: -45px;
+	color: #1e5dd0;
+	font-family: "PT Sans";
+	font-size: 17px;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width:thin;
+	border-bottom-color: #a2a2a2;
+	
+}
+
+
+#access{
+    z-index: 100;
+	position: relative;
+	top:-45px;
+	width: 310px;
+}
+a.page_item_link{
+	text-decoration:none;
+	color: #a2a2a2;
+	font-family: "PT Sans";
+	font-size: 15px;
+	position: relative;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-right-style: solid;
+	border-right-width:thin;
+	border-right-color: #a2a2a2;
+}
+
+a.page_item_link:hover{
+	color: #1e5dd0;
+}
+
+#header {
+	position: fixed;
+
+	left: 350px;
+	padding-top: 8%;
+	padding-bottom: 15%;
+	padding-right: 30px;
+	border-right-style: solid;
+	border-right-width:thin;
+	border-right-color: #a2a2a2;
+}
