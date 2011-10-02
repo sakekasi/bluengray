@@ -12,7 +12,7 @@
 		<?php while ( have_posts() ) : the_post() ?>
  
 		<?php /* Create a div with a unique ID thanks to the_ID() and semantic classes with post_class() */ ?>
-		                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		                <div class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php /* an h2 title */ ?>
 		                    <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'bluengray'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
  

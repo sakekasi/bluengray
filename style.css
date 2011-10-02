@@ -62,6 +62,8 @@
 	width: 50%;
 }
 
+
+
 /*
  * fonts
  */
@@ -141,3 +143,8 @@ a.page_item_link:hover{
 	border-right-width:thin;
 	border-right-color: #a2a2a2;
 }
+
+div.entry-meta {
+	font-style: italic;
+}
+
