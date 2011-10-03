@@ -52,9 +52,11 @@ html{
 	top:-47px;
 	left : 310px;
 	width : 690px;
-	padding-bottom: 20px;
 	min-height: 100%;
 	background-image: url("images/right-side.png");
+	border-bottom-style: solid;
+	border-bottom-width:thin;
+	border-bottom-color: #a2a2a2;
 }
 
 #header {
