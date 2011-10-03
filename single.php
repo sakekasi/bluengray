@@ -2,6 +2,8 @@
  
         <div id="container">
             <div id="content">
+            	
+            	<?php while (have_posts()) : the_post(); ?>
  
                 <div id="nav-above" class="navigation">
                     <div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?></div>
@@ -64,6 +66,8 @@
 					<?php endif; ?>
 				</div><!-- .entry-meta -->
  				<?php comments_template('', true); ?>
+ 				
+ 				<?php endwhile; ?>
             </div><!-- #content -->
         </div><!-- #container -->
  
