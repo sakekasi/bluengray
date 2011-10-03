@@ -46,7 +46,7 @@
 #container {
 	position : absolute;
 	left : 310px;
-	width : 600px;
+	width : 690px;
 }
 
 #header {
@@ -91,6 +91,11 @@ body {
 	background-color: #e6e6e6;
 	font-family: "PT Sans";
 	font-size: 13px;
+}
+
+#content {
+	margin-left: 25px;
+	padding-right: 25px;
 }
 
 #blog-title{
@@ -171,4 +176,8 @@ div.entry-meta {
 	border-bottom-style: solid;
 	border-bottom-width:thin;
 	border-bottom-color: #a2a2a2;
+}
+
+#container {
+	background-image: url("images/right-side.png");
 }
