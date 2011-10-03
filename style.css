@@ -45,6 +45,7 @@
  */
 #container {
 	position : absolute;
+	top:-47px;
 	left : 310px;
 	width : 690px;
 }
