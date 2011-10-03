@@ -52,6 +52,7 @@ html{
 	top:-47px;
 	left : 310px;
 	width : 690px;
+	padding-bottom: 20px;
 	min-height: 100%;
 	background-image: url("images/right-side.png");
 }
@@ -118,6 +119,7 @@ body {
 	margin-left: 25px;
 	padding-right: 20px;
 	padding-top: 30px;
+	padding-bottom: 20px;
 }
 
 #blog-title{
