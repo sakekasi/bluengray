@@ -141,7 +141,7 @@
 	  $GLOBALS['comment'] = $comment;
     	$GLOBALS['comment_depth'] = $depth;
 	  ?>
-    	<li id="comment-<?php comment_ID() ?>" <?php comment_class() ?>>
+    	<li class="comment" id="comment-<?php comment_ID() ?>" <?php comment_class() ?>>
 	        <div class="comment-author vcard"><?php commenter_link() ?></div>
     	    <div class="comment-meta"><?php printf(__('Posted %1$s at %2$s <span class="meta-sep">|</span> <a href="%3$s" title="Permalink to this comment">Permalink</a>', 'bluengray'),
         	            get_comment_date(),
