@@ -3,7 +3,7 @@
         <div id="container">
             <div id="content">
  
-                <h1 class="page-title"><a href="<?php echo get_permalink($post->post_parent) ?>" title="<?php printf( __( 'Return to %s', 'your-theme' ), wp_specialchars( get_the_title($post->post_parent), 1 ) ) ?>" rev="attachment"><span class="meta-nav">&laquo; </span><?php echo get_the_title($post->post_parent) ?></a></h1>
+                <h1 class="page-title"><a href="<?php echo get_permalink($post->post_parent) ?>" title="<?php printf( __( 'Return to %s', 'bluengray' ), wp_specialchars( get_the_title($post->post_parent), 1 ) ) ?>" rev="attachment"><span class="meta-nav">&laquo; </span><?php echo get_the_title($post->post_parent) ?></a></h1>
  				<h2 class="entry-title"><?php the_title(); ?></h2>
  				
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -20,8 +20,8 @@
                     </div>
                     <div class="entry-caption"><?php if ( !empty($post->post_excerpt) ) the_excerpt() ?></div>
  
-					<?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'your-theme' )  ); ?>
-					<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'your-theme' ) . '&after=</div>') ?>
+					<?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'bluengray' )  ); ?>
+					<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'bluengray' ) . '&after=</div>') ?>
  
                 </div><!-- .entry-content -->
             </div><!-- #content -->
