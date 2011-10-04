@@ -43,6 +43,21 @@
 /*
  * positioning
  */
+#social-wrap
+{
+	float: left;
+	position: relative;
+	left: 50%;
+}
+
+#social{
+	float: left;
+	position: relative;
+	left: -55%;
+	top: -40px;
+	
+}
+
 html{
 	height: 99%;
 }
@@ -209,5 +224,10 @@ div.entry-meta {
 	border-bottom-style: solid;
 	border-bottom-width:thin;
 	border-bottom-color: #a2a2a2;
+}
+
+.social {
+	height: 32px;
+	width: 32px;
 }
 

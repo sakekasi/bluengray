@@ -8,6 +8,7 @@
                 	</div><!-- #nav-above -->
 	<?php } ?>
     <div id="content">
+    	
     	<?php /* The Loop — with comments! */ ?>
 		<?php while ( have_posts() ) : the_post() ?>
  

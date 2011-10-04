@@ -23,6 +23,12 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 </head>
 <body>
+<?php
+global $options;
+foreach ($options as $value) {
+    if (get_settings( $value['id'] ) === FALSE) { $$value['id'] = $value['std']; } else { $$value['id'] = get_settings( $value['id'] ); }
+}
+?>
 <div id="wrapper" class="hfeed">
     <div id="header">
         <div id="masthead">
@@ -36,16 +42,34 @@
             <div id="access">
             	<?php wp_page_menu( 'sort_column=menu_order' ); ?>
             </div><!-- #access -->
-            
+            <div id="social-wrap">
             <div id="social">
-            	<a id="facebook"></a>
-            	<a id="twitter"></a>
-            	<a id="google+"></a>
-            	<a id="github"></a>
-            	<a id="youtube"></a>
-            	<a id="email"></a>
-            	<a id="rss"></a>
+            	<?php 	if($bluengray_facebook){
+            		  		printf('<a target="_blank" class="social" id="facebook" href="%s"><img class="social" src="wp-content/themes/bluengray/images/facebook.png"></a>',$bluengray_facebook);
+						}
+				 	  	if($bluengray_twitter){
+            				printf('<a target="_blank" class="social" id="twitter" href="%s"><img class="social" src="wp-content/themes/bluengray/images/twitter.png"></a>', $bluengray_twitter);
+            			}
+					  	if($bluengray_google_plus){
+            				printf('<a target="_blank" class="social" id="google+" href="%s"><img class="social" src="wp-content/themes/bluengray/images/googleplus.png"></a>', $bluengray_google_plus);
+						}
+					  	if($bluengray_github){
+            				printf('<a target="_blank" class="social" id="github" href="%s"><img class="social" src="wp-content/themes/bluengray/images/github.png"></a>',$bluengray_github);
+						}
+					  	if($bluengray_youtube){
+            				printf('<a target="_blank" class="social" id="youtube" href="%s"><img class="social" src="wp-content/themes/bluengray/images/youtube.png"></a>',$bluengray_youtube);
+						}
+					  	if($bluengray_email){
+            				printf('<a target="_blank" class="social" id="email" href="mailto:%s"><img class="social" src="wp-content/themes/bluengray/images/email.png"></a>',$bluengray_email);
+						}
+            		  	if($bluengray_rss){
+            				printf('<a target="_blank" class="social" id="rss" href="%s"><img class="social" src="wp-content/themes/bluengray/images/rss.png"></a>',$bluengray_rss);
+					  	} else {
+							printf('<a target="_blank" class="social" id="rss" href="%s"><img class="social" src="wp-content/themes/bluengray/images/rss.png"></a>',bloginfo('rss2_url'));
+				}?>
             </div><!-- #social -->
+            </div><!-- #social-wrap -->
+            
  
         </div><!-- #masthead -->
     </div><!-- #header -->
