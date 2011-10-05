@@ -64,8 +64,9 @@ html{
 
 #container {
 	position : absolute;
+	display: block; 
 	top:-47px;
-	left : 310px;
+	left : -80px;
 	width : 690px;
 	min-height: 100%;
 	background-image: url("images/right-side.png");
@@ -76,15 +77,24 @@ html{
 
 #header {
 	float : left;
+	display: block; 
+	position: absolute;
 	margin : 0 0 0 0;
 	width : 310 px;
 }
 
+#center {
+	float: left;
+	position: relative;
+	left: 50%;
+}
+
 #wrapper {
 	position : relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+	float: left;
+	display: block; 
+	width: 1010;
+	left: -50%;
 	height: 100%;
 }
 
