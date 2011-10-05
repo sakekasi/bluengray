@@ -1,0 +1,45 @@
+/*
+ Theme Name: Blue 'n Gray
+ Theme URI: http://www.sakekasi.com/
+ Description: The theme used on my personal wordpress blog.
+ Author: Saketh Kasibatla
+ Author URI: http://www.sakekasi.com/
+ Version: 1.0
+ Tags: blue, black, minimalist, elegant, cursive
+ .
+ This theme is released under the GNU GPL
+ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ .
+ */
+
+/* Reset default browser styles */
+@import url('styles/reset.css');
+
+/* Rebuild default browser styles */
+@import url('styles/rebuild.css');
+
+/* WP.css */
+@import url('styles/wp.css');
+
+/*2-col.css*/
+@import url('styles/2-col.css');
+
+/*
+ * fonts
+ */
+
+@font-face{
+	font-family: "Wendy";
+	src:url("fonts/wendylpbold.ttf");
+}
+
+@font-face{
+	font-family: "PT Sans";
+	src:url("fonts/PT_Sans-Narrow-Web-Regular.ttf");
+}
+
+
+/*
+ * body
+ */
+
