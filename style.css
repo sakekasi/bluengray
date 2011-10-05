@@ -90,7 +90,7 @@ body {
 
 .chrome #masthead{
 	position: absolute;
-
+	top: 250px;
 	height: 200px;
 	width: 354px;
 	
@@ -134,6 +134,7 @@ body {
 .page_item_link{
 	display: inline-block;
 	color: #A2A2A2;
+	text-decoration: none;
 	vertical-align: middle;
 	
 	padding-right: 5px;

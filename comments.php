@@ -115,7 +115,7 @@ foreach ( $comments as $comment )
  
               <div id="form-section-comment" class="form-section">
                                 <div class="form-label"><label for="comment"><?php _e('Comment', 'bluengray') ?></label></div>
-                                <div class="form-textarea"><textarea id="comment" name="comment" cols="119" rows="8" tabindex="6"></textarea></div>
+                                <div class="form-textarea"><textarea id="comment" name="comment" cols="87" rows="8" tabindex="6"></textarea></div>
               </div><!-- #form-section-comment .form-section -->
  
               <div id="form-allowed-tags" class="form-section">

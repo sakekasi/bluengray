@@ -207,7 +207,6 @@
 	}
 
 	add_action('admin_menu', 'mytheme_add_admin'); ?>
-
 <?php
 
 
