@@ -9,6 +9,6 @@
         </div><!-- #colophon -->
     </div><!-- #footer -->
 </div><!-- #wrapper -->
-</div><!-- #center -->
+
 </body>
 </html>

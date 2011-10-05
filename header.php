@@ -17,6 +17,9 @@
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
  
     <?php wp_head(); ?>
+    
+    <script type="text/javascript" src="<?php bloginfo('url');?>/wp-content/themes/bluengray/js/floating-1.7.js">  
+    </script>  
  
     <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'bluengray' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
     <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'bluengray' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
@@ -29,7 +32,7 @@ foreach ($options as $value) {
     if (get_settings( $value['id'] ) === FALSE) { $$value['id'] = $value['std']; } else { $$value['id'] = get_settings( $value['id'] ); }
 }
 ?>
-<div id="center">
+
 <div id="wrapper" class="hfeed">
     <div id="header">
         <div id="masthead">
@@ -81,5 +84,5 @@ foreach ($options as $value) {
  
         </div><!-- #masthead -->
     </div><!-- #header -->
- 
+ 	
     <div id="main">
