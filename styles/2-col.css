@@ -20,23 +20,18 @@ body {
 }
 #header { 
  color: #333;
- border: 1px solid #ccc;
- background: #E7DBD5;
  margin: 10px 5px 10px 0px;
  padding: 10px;
  height: 500px;
- width: 436px;
+ width: 354px;
  float: left;
 }
 #container { 
  float: right;
  color: #333;
- border: 1px solid #ccc;
- background: #F2F2E6;
  margin: 10px 0px 10px 0px;
  padding: 10px;
- height: 500px;
- width: 436px;
+ width: 488px;
  display: inline;
  position: relative;
 }

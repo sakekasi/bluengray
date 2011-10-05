@@ -1,0 +1,21 @@
+#access {
+    overflow: auto;
+}
+.skip-link {
+    position:absolute;
+        left:-9000px;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+}
+.menu ul ul {
+    display: none;
+}
+.menu li {
+    display: inline;
+}
+.menu a {
+    display: block;
+    float: left;
+}
