@@ -196,6 +196,11 @@ body {
 	top:-40px;
 }
 
+#content {
+	padding-top: 10px;
+}
+
+
 .nav-previous {
 	float: left;
 }
@@ -226,6 +231,13 @@ body {
 .entry-title {
 	color: #000000;
 	font-size: 19px;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.page-title {
+	color: #000000;
+	font-size: 21px;
 	text-decoration:underline;
 	font-weight:bold;
 }

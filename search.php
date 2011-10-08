@@ -1,6 +1,6 @@
 <?php get_header(); ?>
  
-        <div id="container">
+        <div id="container" class="search">
             <div id="content">
  
                 <?php if ( have_posts() ) : ?>
