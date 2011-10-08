@@ -123,22 +123,34 @@ body {
 
 #access {
 	position: relative;
+	text-align: center;
 	z-index: 1;
 	top: -45px;
 	
 	white-space: nowrap;
-	text-align: center;
 	overflow: hidden;
 }
 
+#nav {
+	display: table;
+	margin: 0 auto;
+}
+
+#nav li{
+	display: table-cell;
+	float: left;
+}
+
 .page_item_link{
-	display: inline-block;
 	color: #A2A2A2;
 	text-decoration: none;
 	vertical-align: middle;
 	
 	padding-right: 5px;
 	padding-left: 5px;
+	border-left-style: solid;
+	border-left-width:thin;
+	border-left-color: #a2a2a2;
 	border-right-style: solid;
 	border-right-width:thin;
 	border-right-color: #a2a2a2;
@@ -170,16 +182,23 @@ body {
 	width: 32px;
 }
 
-#searchform {
+
+.search-not-found #searchform{
 	float: left;
 	position: relative;
 	left: 50%;
 }
 
+.search-not-found #search{
+	float: left;
+	position: relative;
+	left: -50%;
+}
+
 #search {
 	float: left;
 	position: relative;
-	left:-65%;
+	left:-75px;
 }
 
 #s {
@@ -203,7 +222,7 @@ body {
 	padding-bottom: 30px;
 }
 
-#container{
+#container{	
 	background-image: url("images/right-side.png");
 	
 	padding-left: 25px;
