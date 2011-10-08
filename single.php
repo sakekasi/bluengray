@@ -72,6 +72,4 @@
     				<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?></div>
                 </div><!-- #nav-below -->  
         </div><!-- #container -->
- 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

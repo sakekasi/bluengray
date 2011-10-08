@@ -81,8 +81,7 @@ foreach ($options as $value) {
             	
             </div><!-- #social -->
             </div><!-- #social-wrap -->
-            
- 
+ 			<?php get_search_form( ); ?> 
         </div><!-- #masthead -->
     </div><!-- #header -->
  	

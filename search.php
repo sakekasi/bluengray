@@ -60,7 +60,7 @@
  
                 	<div id="post-0" class="post no-results not-found">
                     	<h2 class="entry-title"><?php _e( 'Nothing Found', 'bluengray' ) ?></h2>
-                    	<div class="entry-content">
+                    	<div class="search-not-found entry-content">
 	                        <p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'bluengray' ); ?></p>
     						<?php get_search_form(); ?>
         	            </div><!-- .entry-content -->
@@ -70,5 +70,4 @@
             </div><!-- #content -->
         </div><!-- #container -->
  
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -54,6 +54,4 @@
 				<?php } ?>
             </div><!-- #content -->
         </div><!-- #container -->
- 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

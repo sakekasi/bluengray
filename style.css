@@ -170,6 +170,38 @@ body {
 	width: 32px;
 }
 
+#searchform {
+	float: left;
+	position: relative;
+	left: 50%;
+}
+
+#search {
+	float: left;
+	position: relative;
+	left:-65%;
+}
+
+#s {
+	height: 18px;
+}
+
+#searchsubmit {
+	font-family:"PT Sans";
+	font-size: 13px;
+	background-color: #e6e6e6;
+	
+	border: 1px solid #a2a2a2;
+}
+
+#searchsubmit:hover {
+	background-color: #1e5dd0;
+	color: #FFFFFF;
+}
+
+.search-not-found {
+	padding-bottom: 30px;
+}
 
 #container{
 	background-image: url("images/right-side.png");
@@ -189,7 +221,7 @@ body {
 }
 
 .gecko #container{
-	top:-60px;
+	top:-50px;
 }
 
 .ie #container{
@@ -241,3 +273,9 @@ body {
 	text-decoration:underline;
 	font-weight:bold;
 }
+
+#secondary{
+	display: none;
+}
+
+

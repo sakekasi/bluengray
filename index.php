@@ -61,5 +61,5 @@
  
 <div id="secondary" class="widget-area">
 </div><!-- #secondary -->
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
