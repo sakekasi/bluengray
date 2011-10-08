@@ -293,6 +293,28 @@ body {
 	font-weight:bold;
 }
 
+#post-social {
+	margin-top: 10px;
+	margin-bottom: 45px;
+}
+
+#post-social *{
+	float: left;
+} 
+
+#post-social #fb {
+	width: 310px;
+	float: left;
+}
+
+#post-social #gp {
+	position: relative;
+	top: -18px;
+	float: left;
+	width: 200px;
+	left: 250px;
+}
+
 #secondary{
 	display: none;
 }

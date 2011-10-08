@@ -63,6 +63,37 @@
 						</div><!-- #entry-author-info -->
 					<?php endif; ?>
 				</div><!-- .entry-meta -->
+		
+		
+		<div id="post-social">
+			<a href="https://twitter.com/share" 
+			   class="twitter-share-button" 
+			   data-url="<?php the_permalink(); ?>"
+			   data-count="horizontal" data-related="sakekasi">Tweet</a>
+			<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+			
+			<div id="fb">
+			<div id="fb-root"></div>
+			<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+			<fb:like 
+				href="<?php echo get_permalink(); ?>" 
+				width="450"
+				send="true" 
+				layout="button_count"
+				class="facebook-share"></fb:like>
+			</div> 
+			
+			<div id="gp">
+			<script type="text/javascript">
+  				(function() {
+    				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    				po.src = 'https://apis.google.com/js/plusone.js';
+    				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  				})();
+			</script>				
+			<g:plusone size="small" href="<?php the_permalink()?>"></g:plusone>
+			</div>
+		</div><!-- #post-social -->
  				<?php comments_template('', true); ?>
  				
  				<?php endwhile; ?>

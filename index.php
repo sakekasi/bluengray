@@ -30,6 +30,7 @@
 		<?php /* The entry content */ ?>
                     		<div class="entry-content">
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'bluengray' )  ); ?>
+		
 		<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'bluengray' ) . '&after=</div>') ?>
         		            </div><!-- .entry-content -->
  

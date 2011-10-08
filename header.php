@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" <?php language_attributes(); ?> itemscope itemtype="http://schema.org/Blog">
 <head profile="http://gmpg.org/xfn/11">
     <title><?php
         if ( is_single() ) { single_post_title(); }
@@ -10,7 +10,14 @@
         else { bloginfo('name'); wp_title('|'); get_page_number(); }
     ?></title>
  	
- 	
+ 	<meta property="og:title" content="sakekasi" />
+	<meta property="og:type" content="blog" />
+	<meta property="og:url" content="http://www.sakekasi.com" />
+	<meta property="og:image" content="" />
+	<meta property="og:site_name" content="sakekasi" />
+	<meta property="fb:admins" content="100000697793496" />
+ 	<meta itemprop="name" content="sakekasi">
+	<meta itemprop="description" content="my personal projects and adventures on the internet">
     <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
  
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
