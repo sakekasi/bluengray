@@ -31,6 +31,13 @@
 			   "id"=>$shortname."_github",
 			   "std"=>"",
 			   "type"=>"text"),
+			   
+		array(  "name"=>"scribd",
+				"desc"=>"enter the link to your scribd profile or leave blank for no scribd",
+				"id"=>$shortname."_scribd",
+				"std"=>"",
+				"type"=>"text"),
+				
 		
 		array( "name"=>"youtube",
 			   "desc"=>"enter the link to your youtube profile, or leave blank for no youtube",

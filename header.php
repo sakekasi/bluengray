@@ -82,6 +82,9 @@ foreach ($options as $value) {
 					  	if($bluengray_github){
             				printf('<a target="_blank" class="social" id="github" href="%s"><img class="social" src="%s/wp-content/themes/bluengray/images/github.png"></a>',$bluengray_github, get_site_url());
 						}
+						if($bluengray_scribd){
+							printf('<a target="_blank" class="social" id="scribd" href="%s"><img class="social" src="%s/wp-content/themes/bluengray/images/scribd.png"></a>',$bluengray_scribd, get_site_url());
+						}
 					  	if($bluengray_youtube){
             				printf('<a target="_blank" class="social" id="youtube" href="%s"><img class="social" src="%s/wp-content/themes/bluengray/images/youtube.png"></a>',$bluengray_youtube, get_site_url());
 						}
