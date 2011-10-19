@@ -1,11 +1,11 @@
 <?php get_header(); ?>
  
-        <div id="container">
+        <div class="single" id="container">
         	<div id="nav-above" class="navigation">
                     <div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?></div>
     				<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?></div>
             </div><!-- #nav-above -->
-            <div id="content">
+            <div class="single" id="content">
             	
             	<?php while (have_posts()) : the_post(); ?>
  

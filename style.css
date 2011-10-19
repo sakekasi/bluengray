@@ -233,7 +233,7 @@ body {
 }
 
 .chrome #container{
-	top:-60px;
+	top:-50px;
 }
 
 .gecko #container{
@@ -247,6 +247,7 @@ body {
 #content {
 	padding-top: 10px;
 }
+
 
 
 .nav-previous {
@@ -316,4 +317,26 @@ body {
 	display: none;
 }
 
+.firefox .page #content {
+	top: 30px;
+}
 
+.ie .page #content {
+	top: 20px;
+}
+
+.chrome #content {
+	top: 30px;
+}
+
+.firefox .single #containter{
+	padding-top: 30px;
+}
+
+.ie .single #container {
+	padding-top: 20px;
+}
+
+.chrome .single #container {
+	padding-top: 20px;
+}

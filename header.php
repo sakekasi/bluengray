@@ -10,14 +10,28 @@
         else { bloginfo('name'); wp_title('|'); get_page_number(); }
     ?></title>
  	
- 	<meta property="og:title" content="sakekasi" />
+ 	<meta property="og:title" content="<?php
+        		if ( is_single() ) { single_post_title(); }
+        		elseif ( is_home() || is_front_page() ) { bloginfo('name'); print ' | '; bloginfo('description'); get_page_number(); }
+        		elseif ( is_page() ) { single_post_title(''); }
+        		elseif ( is_search() ) { bloginfo('name'); print ' | Search results for ' . wp_specialchars($s); get_page_number(); }
+        		elseif ( is_404() ) { bloginfo('name'); print ' | Not Found'; }
+        		else { bloginfo('name'); wp_title('|'); get_page_number(); }
+    		?>" />
 	<meta property="og:type" content="blog" />
 	<meta property="og:url" content="http://www.sakekasi.com" />
 	<meta property="og:image" content="" />
 	<meta property="og:site_name" content="sakekasi" />
 	<meta property="fb:admins" content="100000697793496" />
- 	<meta itemprop="name" content="sakekasi">
-	<meta itemprop="description" content="my personal projects and adventures on the internet">
+ 	<meta itemprop="name" content="<?php
+        if ( is_single() ) { single_post_title(); }
+        elseif ( is_home() || is_front_page() ) { bloginfo('name'); print ' | '; bloginfo('description'); get_page_number(); }
+        elseif ( is_page() ) { single_post_title(''); }
+        elseif ( is_search() ) { bloginfo('name'); print ' | Search results for ' . wp_specialchars($s); get_page_number(); }
+        elseif ( is_404() ) { bloginfo('name'); print ' | Not Found'; }
+        else { bloginfo('name'); wp_title('|'); get_page_number(); }
+    ?>">
+	<meta itemprop="description" content="">
     <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
  
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
