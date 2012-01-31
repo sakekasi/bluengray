@@ -237,7 +237,7 @@ body {
 }
 
 .gecko #container{
-	top:0px;
+	top: -20px;
 }
 
 .ie #container{
