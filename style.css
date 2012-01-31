@@ -31,6 +31,8 @@
  * fonts
  */
 
+@import url('fonts/stylesheet.css');
+
 @font-face{
 	font-family: "Wendy";
 	src:url("fonts/wendylpbold.ttf");
@@ -99,7 +101,7 @@ body {
 
 #blog-title{
 	color: #5f87d0;
-	font-family: "Wendy";
+	font-family: "FFFTusjBold";
 	font-size: 105px;
 	text-decoration: none;
 	text-align: center;
