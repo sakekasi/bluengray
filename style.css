@@ -102,9 +102,11 @@ body {
 #blog-title{
 	color: #5f87d0;
 	font-family: "BallparkWeiner";
-	font-size: 100px;
+	font-size: 75px;
 	text-decoration: none;
 	text-align: center;
+	line-height: 90%;
+	padding-bottom: 40px;
 }
 
 #blog-description{
